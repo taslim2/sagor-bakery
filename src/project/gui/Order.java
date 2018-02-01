@@ -881,9 +881,10 @@ public class Order extends javax.swing.JFrame {
     }//GEN-LAST:event_btnFindActionPerformed
 
     private void btnClearActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnClearActionPerformed
+        comboDealer.setSelectedItem("");
         txtPurchaseId.setText("");
         txtdealerId.setText("");
-        comboDealer.setSelectedItem("");
+        
         comboProduct.setSelectedItem("");
         txtdueamount.setText("");
         txtDue.setText("");
@@ -894,6 +895,7 @@ public class Order extends javax.swing.JFrame {
         txtTotalPrice.setText("");
         txtSubmitAmount.setText("");
         txtDue.setText("");
+        productPerchaseDetailsTableModel.setRowCount(0);
         btnNew.setEnabled(true);
         btnTotalPrice.setEnabled(true);
         btnSave.setEnabled(true);
