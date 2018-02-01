@@ -692,6 +692,7 @@ public class Order extends javax.swing.JFrame {
         pProduct.add(product);
         
         if(pProduct.size() != 1){
+            // this code for clear jtable data
             productPerchaseDetailsTableModel.setRowCount(0);
         }
         
