@@ -246,7 +246,7 @@
                               <Component id="btnNew" min="-2" max="-2" attributes="0"/>
                           </Group>
                       </Group>
-                      <EmptySpace max="32767" attributes="0"/>
+                      <EmptySpace pref="287" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -330,7 +330,7 @@
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Tahoma" size="11" style="1"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="Unite price"/>
+                <Property name="text" type="java.lang.String" value="Unit price"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JTextField" name="txtQuantity">
@@ -468,14 +468,14 @@
                               <Component id="comboDealer" min="-2" pref="99" max="-2" attributes="0"/>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
                               <Component id="txtdealerId" min="-2" pref="30" max="-2" attributes="0"/>
-                              <EmptySpace min="0" pref="34" max="32767" attributes="0"/>
+                              <EmptySpace min="0" pref="52" max="32767" attributes="0"/>
                           </Group>
                       </Group>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Component id="txtdueamount" min="-2" pref="90" max="-2" attributes="0"/>
                           <Component id="jLabel12" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace pref="30" max="32767" attributes="0"/>
+                      <EmptySpace max="32767" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace min="-2" pref="115" max="-2" attributes="0"/>
@@ -675,7 +675,7 @@
                 <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
                   <Table columnCount="4" rowCount="0">
                     <Column editable="false" title="Product" type="java.lang.String"/>
-                    <Column editable="false" title="Unite Price" type="java.lang.Long"/>
+                    <Column editable="false" title="Unit Price" type="java.lang.Long"/>
                     <Column editable="false" title="Quantity" type="java.lang.Integer"/>
                     <Column editable="false" title="Product Price" type="java.lang.Float"/>
                   </Table>

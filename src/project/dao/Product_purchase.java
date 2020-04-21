@@ -10,7 +10,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import project.gui.Order;
+import project.gui.PurchaseGui;
 import project.model.Dealer;
 import project.model.Purchase;
 import project.model.PurchaseProduct;
@@ -111,7 +111,7 @@ public class Product_purchase  implements SagorBakery<Product_purchase>{
            this.setPurchase(pur);
            this.setPp(ppp);
        } catch (SQLException ex) {
-           Logger.getLogger(Order.class.getName()).log(Level.SEVERE, null, ex);
+           Logger.getLogger(Purchase.class.getName()).log(Level.SEVERE, null, ex);
        }
     }
 

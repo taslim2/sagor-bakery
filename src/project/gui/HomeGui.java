@@ -201,7 +201,7 @@ public class HomeGui extends javax.swing.JFrame {
     }//GEN-LAST:event_btnbutton1ActionPerformed
 
     private void btnButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnButton3ActionPerformed
-        Order ordr = new Order();
+        PurchaseGui ordr = new PurchaseGui();
         ordr.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_btnButton3ActionPerformed

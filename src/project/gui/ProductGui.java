@@ -96,7 +96,7 @@ public class ProductGui extends javax.swing.JFrame {
         jLabel3.setText("Name");
 
         jLabel4.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        jLabel4.setText("Unite Price");
+        jLabel4.setText("Unit Price");
 
         jLabel7.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(51, 0, 255));
@@ -344,6 +344,15 @@ public class ProductGui extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void btnSaveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSaveActionPerformed
+        
+        
+        if(txtName.getText().equals("")){
+            JOptionPane.showMessageDialog(null, "Enter Product Name");
+        }
+        else if(txtUniteprice.getText().equals("")){
+            JOptionPane.showMessageDialog(null, "Enter Product unit price");
+        }
+        else{
         Product p =new Product();
         p.setName(txtName.getText().trim());
         p.setUnite_price(Float.parseFloat(txtUniteprice.getText()));
@@ -353,6 +362,7 @@ public class ProductGui extends javax.swing.JFrame {
         } catch (SQLException ex) {
             Logger.getLogger(ProductGui.class.getName()).log(Level.SEVERE, null, ex);
             JOptionPane.showMessageDialog(null, ex.getMessage());
+        }
         }
     }//GEN-LAST:event_btnSaveActionPerformed
 
@@ -430,7 +440,7 @@ public class ProductGui extends javax.swing.JFrame {
     }//GEN-LAST:event_btnHomeActionPerformed
 
     private void btnPurchaseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPurchaseActionPerformed
-        Order ogui = new Order();
+        PurchaseGui ogui = new PurchaseGui();
         ogui.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_btnPurchaseActionPerformed

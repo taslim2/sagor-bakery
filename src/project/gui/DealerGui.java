@@ -368,12 +368,34 @@ public class DealerGui extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void btnSaveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSaveActionPerformed
-       Dealer d = new Dealer();
+      
+       
+       
+       if(txtName.getText().equals("")){
+           JOptionPane.showMessageDialog(txtId, "Entet Name");
+       
+       }
+        else if(txtPhone.getText().equals("")){
+           JOptionPane.showMessageDialog(txtId, "Entet Phone no");
+       
+       }
+       else if(txtAddress.getText().equals("")){
+           JOptionPane.showMessageDialog(txtId, "Entet Address");
+       
+       }
+      
+       else if(txtDue.getText().equals("")){
+           JOptionPane.showMessageDialog(txtId, "Entet Due amount");
+       
+       }
+       else{
+            Dealer d = new Dealer();
       // d.setDealer_id(Integer.parseInt(txtId.getText().trim()));
        d.setName(txtName.getText().trim());
        d.setPhone_no(txtPhone.getText().trim());
        d.setAddress(txtAddress.getText().trim());
        d.setDue_balance(Float.parseFloat(txtDue.getText().trim()));
+           
         try {
             dao.save(d);
             JOptionPane.showMessageDialog(null, "Dealer value Saved");
@@ -381,6 +403,7 @@ public class DealerGui extends javax.swing.JFrame {
             Logger.getLogger(DealerGui.class.getName()).log(Level.SEVERE, null, ex);
             JOptionPane.showMessageDialog(null, ex.getMessage());
         }
+       }
     }//GEN-LAST:event_btnSaveActionPerformed
 
     private void btnFindActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFindActionPerformed
@@ -471,7 +494,7 @@ public class DealerGui extends javax.swing.JFrame {
     }//GEN-LAST:event_btnHomeActionPerformed
 
     private void btnPurchaseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPurchaseActionPerformed
-        Order ogui = new Order();
+        PurchaseGui ogui = new PurchaseGui();
         ogui.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_btnPurchaseActionPerformed
